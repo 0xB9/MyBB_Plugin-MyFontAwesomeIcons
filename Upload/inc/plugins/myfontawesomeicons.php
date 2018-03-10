@@ -83,10 +83,6 @@ if(!defined("IN_MYBB"))
         find_replace_templatesets("headerinclude", '#{\$stylesheets}(\r?)\n#', "{\$stylesheets}\n<link href=\"{\$mybb->asset_url}/inc/plugins/myfontawesomeicons/font-awesome/css/font-awesome.min.css\" rel=\"stylesheet\" type=\"text/css\">\n");
 
 
-
-
-
-
         $old3 = "{$boardstats}
 
 <dl class=\"forum_legend smalltext\">
@@ -103,20 +99,21 @@ if(!defined("IN_MYBB"))
 	<dd>{\$lang->forum_redirect}</dd>
 </dl>
 <br class=\"clear\" />";
+
         $new3 = "{$boardstats}
 
 <dl class=\"forum_legend smalltext\">
-<dt><div class=\"forum_status forum_on\" title=\"{\$lang->new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
-<dd>{\$lang->new_posts}</dd>
+    <dt><div class=\"forum_status forum_on\" title=\"{\$lang->new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
+    <dd>{\$lang->new_posts}</dd>
 
-<dt><div class=\"forum_status forum_off\" title=\"{\$lang->no_new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
-<dd>{\$lang->no_new_posts}</dd>
+    <dt><div class=\"forum_status forum_off\" title=\"{\$lang->no_new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
+    <dd>{\$lang->no_new_posts}</dd>
 
-<dt><div class=\"forum_status forum_offlock\" title=\"{\$lang->forum_locked}\"><i class=\"fa fa-lock\"></i></div></dt>
-<dd>{\$lang->forum_locked}</dd>
+    <dt><div class=\"forum_status forum_offlock\" title=\"{\$lang->forum_locked}\"><i class=\"fa fa-lock\"></i></div></dt>
+    <dd>{\$lang->forum_locked}</dd>
 
-<dt><div class=\"forum_status forum_offlink\" title=\"{\$lang->forum_redirect}\"><i class=\"fa fa-link\"></i></div></dt>
-<dd>{\$lang->forum_redirect}</dd>
+    <dt><div class=\"forum_status forum_offlink\" title=\"{\$lang->forum_redirect}\"><i class=\"fa fa-link\"></i></div></dt>
+    <dd>{\$lang->forum_redirect}</dd>
 </dl>
 <br class=\"clear\" />";
         find_replace_templatesets("index", "#".preg_quote($old3)."#i", "$new3");
@@ -177,25 +174,25 @@ if(!defined("IN_MYBB"))
         find_replace_templatesets("headerinclude", '#<link href=\"{\$mybb->asset_url}/inc/plugins/myfontawesomeicons/font-awesome/css/font-awesome.min.css\" rel=\"stylesheet\" type=\"text/css\">(\r?)\n#', "", 0);
     
 
-
         $old3 = "{$boardstats}
 
 <dl class=\"forum_legend smalltext\">
-<dt><div class=\"forum_status forum_on\" title=\"{\$lang->new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
-<dd>{\$lang->new_posts}</dd>
+    <dt><div class=\"forum_status forum_on\" title=\"{\$lang->new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
+    <dd>{\$lang->new_posts}</dd>
 
-<dt><div class=\"forum_status forum_off\" title=\"{\$lang->no_new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
-<dd>{\$lang->no_new_posts}</dd>
+    <dt><div class=\"forum_status forum_off\" title=\"{\$lang->no_new_posts}\"><i class=\"fa fa-comments\"></i></div></dt>
+    <dd>{\$lang->no_new_posts}</dd>
 
-<dt><div class=\"forum_status forum_offlock\" title=\"{\$lang->forum_locked}\"><i class=\"fa fa-lock\"></i></div></dt>
-<dd>{\$lang->forum_locked}</dd>
+    <dt><div class=\"forum_status forum_offlock\" title=\"{\$lang->forum_locked}\"><i class=\"fa fa-lock\"></i></div></dt>
+    <dd>{\$lang->forum_locked}</dd>
 
-<dt><div class=\"forum_status forum_offlink\" title=\"{\$lang->forum_redirect}\"><i class=\"fa fa-link\"></i></div></dt>
-<dd>{\$lang->forum_redirect}</dd>
-</dl>
+    <dt><div class=\"forum_status forum_offlink\" title=\"{\$lang->forum_redirect}\"><i class=\"fa fa-link\"></i></div></dt>
+    <dd>{\$lang->forum_redirect}</dd>
+ </dl>
 <br class=\"clear\" />";
-        $new3 = "{$boardstats}
 
+        $new3 = "{$boardstats}
+        
 <dl class=\"forum_legend smalltext\">
 	<dt><span class=\"forum_status forum_on\" title=\"{\$lang->new_posts}\"></span></dt>
 	<dd>{\$lang->new_posts}</dd>

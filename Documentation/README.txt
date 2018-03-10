@@ -14,3 +14,12 @@ This will allow you to add custom Font-Awesome icons for your forums.
 
 You can specify a css name to your forum's custom font-awesome icon by going to the ACP => Forum Management => Edit Forum.
 
+
+localization support:
+
+-english 
+-englishgb
+-espanol
+-french
+-italiano
+

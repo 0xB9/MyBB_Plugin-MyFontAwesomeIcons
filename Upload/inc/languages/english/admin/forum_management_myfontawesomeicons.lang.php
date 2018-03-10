@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.0
+ * Plugin Version: 1.1
  * 
  */
 
@@ -19,7 +19,7 @@ $l['myfontawesomeicons_Desc'] = 'Lets you implement custom Font-Awesome icons fo
 $l['myfontawesomeicons_Web'] = 'http://community.mybb.com/user-6029.html';
 $l['myfontawesomeicons_Auth'] = 'Ethan DeLong & Vintagedaddyo';
 $l['myfontawesomeicons_AuthSite'] = 'http://community.mybb.com/user-6029.html';
-$l['myfontawesomeicons_Ver'] = '1.0';
+$l['myfontawesomeicons_Ver'] = '1.1';
 $l['myfontawesomeicons_GUID'] = '';
 $l['myfontawesomeicons_Compat'] = '18*';
  
